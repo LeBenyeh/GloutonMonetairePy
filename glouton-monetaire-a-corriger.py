@@ -21,10 +21,10 @@ def Monnaie (somme, ListeMontant) :
     for k in range(ListeMontant):
 
         # recupere le nombre de piece selon le quotient (entier //)
-        NbPiece[k]=somme//ListeMontant[y]
+        ListeNbPiece[k]=somme//ListeMontant[k]
 
         # somme restante a deduire du montant
-        somme=round(somme%ListeMontant['k'], 2)
+        somme=round(somme%ListeMontant[k], 2)
 
     return somme,ListeNbPiece
 
